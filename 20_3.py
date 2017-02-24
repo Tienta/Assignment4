@@ -15,11 +15,11 @@ keys = count.keys()
 
 def count_all():
     for word in sorted(keys):
-        print(word, "   " , count[word])
+        print("{0:18}{1}".format(word,count[word]))
 
 print("The word 'alice' appears " + str(count['alice']) + " times in the book.")        
-print("Word\tCount")
-print("=============")
+print("Word\t\t  Count")
+print("=======================")
 count_all()
 
 
